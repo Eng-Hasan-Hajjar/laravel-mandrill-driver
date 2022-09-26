@@ -1,0 +1,43 @@
+{
+    "name": "therobfonz/laravel-mandrill-driver",
+    "description": "Mandrill Driver for Laravel 9+",
+    "type": "library",
+    "keywords": [
+        "Laravel",
+        "Mandrill"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rob Fonseca",
+            "email": "robfonseca@gmail.com"
+        },
+        {
+            "name": "Brandon Ferens",
+            "email": "brandon@kirschbaumdevelopment.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "illuminate/support": "^9.0",
+        "mailchimp/transactional": "^1.0",
+        "symfony/mailer": "^6.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.4.4",
+        "phpunit/phpunit": "^9.5.10"
+    },
+    "autoload": {
+        "psr-4": {
+            "LaravelMandrill\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LaravelMandrill\\MandrillServiceProvider"
+            ]
+        }
+    },
+    "prefer-stable": true
+}
